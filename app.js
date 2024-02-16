@@ -27,12 +27,15 @@ const findTypeNumber = (a) => {
 console.log(findTypeNumber(5));
 
 const fizzBuzzFunc = (a) => {
-    if (a % 3 === 0){
-        return 'Fizz';
-    } else if (a % 5 === 0) {
-        return 'Buzz';
-    } else {
+    if (a % 3 === 0 && a % 5 === 0){
         return 'FizzBuzz';
+    } else if (a % 3 === 0) {
+        return 'Fizz';
+    } else if (a % 5 === 0){
+        return 'Buzz';
+    }
+    else {
+        return 'Not FizzBuzz';
     }
 }
-console.log(fizzBuzzFunc());
+console.log(fizzBuzzFunc(15));
