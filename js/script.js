@@ -91,20 +91,29 @@
 // for (let i = 0; i < personArr.length; i++){
 //     if (typeof personArr[i] === "number") break;
 //     console.log(personArr[i]);
-// }
-
-const firstName = "Albert";
-const surName = "Enyshtein";
-const job = "physicist";
-const age = 60;
-
-console.log(`My name is ${firstName} ${surName}. I am ${age} years old. I am ${job}`);
 
 
+// const firstName = "Albert";
+// const surName = "Enyshtein";
+// const job = "physicist";
+// const age = 60;
 
+// console.log(`My name is ${firstName} ${surName}. I am ${age} years old. I am ${job}`);
 
+let numberOfSeries = +prompt("Nechta serial ko'rdingiz?", "");
+const seriesDB = {
+    count: numberOfSeries,
+    series:{},
+    actors:{},
+    genres:[],
+    privat:false,
+};
+const lastSeeSerial = prompt("Oxirgi ko'rgan serialingiz");
+const yourMark = prompt("Nechi baxo berasiz");
 
+seriesDB.series[lastSeeSerial] = yourMark;
 
+console.log(seriesDB);
 
 
 
